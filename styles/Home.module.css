@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.page_wraper {
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
