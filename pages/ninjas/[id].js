@@ -28,6 +28,7 @@ export const getStaticProps = async ({params}) => {
 }
 
 const Details = ({data}) => {
+    console.log(data)
     return (
         <>
             <Head>
@@ -37,7 +38,8 @@ const Details = ({data}) => {
                 <h1>Details Page</h1>
                 <ul className="details-list">
                     <li>{data.name}</li>
-                    <li>{data.address.city}</li>
+                    <li>{`City: ${data.address.city} Street: ${data.address.street} Suite: ${data.address.suite}`}</li>
+                    <li>{data.company.name}</li>
                     <li><a href={`mailto:${data.email}`}>{data.email}</a></li>
                     <li><a href={`tel:${data.phone}`}>{data.phone}</a></li>
                 </ul>
